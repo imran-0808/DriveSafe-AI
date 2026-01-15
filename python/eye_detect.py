@@ -151,7 +151,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
-# ===============Voice for Driver whatsapp ===================
+# ===============Voice for Driver whatsapp ==================
 speed = get_demo_speed()
 risk = evaluate_risk(speed, True)
 

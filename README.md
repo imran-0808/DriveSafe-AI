@@ -146,19 +146,19 @@ This project was built with a **learning + real-world mindset**, focusing on:
 
 ## 📷 Screenshots
 
-- Owner Dashboard
+### Owner Dashboard
 
 ![owner_dashboard](./screenshots/owner_dashboard.png)
 
-- Alert History
+### Alert History
 
 ![alert_history](./screenshots/alert_history.png)
 
-- Vehicle Detail Page
+### Vehicle Detail Page
 
 ![vehicle_detail](./screenshots/vehicle_detail.png)
 
-- Live Video Session UI
+### Live Video Session UI
 
 ![live_video_session](./screenshots/live_session_video.png)
 

@@ -2,7 +2,6 @@ import cv2
 import time
 import mediapipe as mp
 import pyttsx3
-from twilio.rest import Client
 import geocoder
 import random
 import requests
@@ -38,32 +37,7 @@ def speak(text):
     engine.runAndWait()
 
 # ================= TWILIO =================
-ACCOUNT_SID = "AC39e4527b4c266e80083e177b4a2aa7bb"
-AUTH_TOKEN = "c063c182ccbe718b06a8c3ac282240ec"
 
-FROM_WHATSAPP = "whatsapp:+14155238886"
-TO_WHATSAPP = "whatsapp:+919548309873"
-
-client = Client(ACCOUNT_SID, AUTH_TOKEN)
-
-WHATSAPP_LIMIT_PER_DAY = 5
-whatsapp_sent_count = 0
-
-def send_owner_alert(message):
-    try:
-        location = get_current_location()
-        client.messages.create(
-            body=f"{message}\n📍 Location: {location}",
-            from_=FROM_WHATSAPP,
-            to=TO_WHATSAPP
-        )
-        print("WhatsApp alert sent")
-    except Exception as e:
-        print("WhatsApp failed (ignored):", e)
-
-
-def send_app_alert(message):
-    print("APP ALERT:", message)
 
 # ================= MEDIAPIPE =================
 mp_face_mesh = mp.solutions.face_mesh
@@ -155,7 +129,6 @@ while True:
                             f"Speed: {speed} km/h\n"
                             f"Risk: {risk}"
                         )
-                        send_app_alert(alert_message)
 
                         send_alert_to_backend(
                             alert_type="DROWSINESS",

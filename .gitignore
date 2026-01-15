@@ -4,5 +4,3 @@ build/
 __pycache__/
 *.pyc
 venv/
-python/
-eye_detect.py

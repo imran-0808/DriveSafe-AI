@@ -33,6 +33,11 @@ const VehicleList = () => {
           <div>Risk: {v.riskStatus}</div>
         </div>
       ))}
+      {/* Alert */}
+      <div>
+        <br /><br /><br />
+        🚨 <button style={{ color: "black", backgroundColor: "lightgray", height: "40px", width: "100px" }}><b><a href="http://localhost:5173/alerts">ALERT</a></b></button>
+      </div>
     </div>
   );
 };

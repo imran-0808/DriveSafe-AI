@@ -71,10 +71,10 @@ The system is designed keeping **real-world constraints** in mind:
 
 Driver Camera (Phone / Camera)                                                                                
 ↓                                                                                                             
-Python (Computer Vision + Detection)
-↓                                                   
-Node.js / Express (API Layer)
-↓                                                                                                     
+Python (Computer Vision + Detection)                                                                          
+↓                                                                                                             
+Node.js / Express (API Layer)                                                                                 
+↓                                                                                                    
 MongoDB (Alerts & Vehicle Data)                                                                        
 ↓                                                                                              
 React Dashboard (Owner View)                                                                           
